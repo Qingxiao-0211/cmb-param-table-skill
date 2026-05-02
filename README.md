@@ -2,61 +2,9 @@
 
 > KimiClaw / OpenClaw 技能 —— 根据基金公司标准参数表，自动生成招商银行公募基金产品上线导入模板。
 
-## 📌 解决的问题
-
-基金运营同事在制作招商银行公募基金参数表时，需要将基金公司提供的**标准参数表**手动填入招商银行提供的**导入模板（Excel）**。这个过程：
-
-- 字段多（130+个参数）
-- 标黄字段每个产品都不同，容易填错
-- 标蓝字段需要根据产品类型判断
-- 重复性高，耗时费力
-
 本 Skill 实现**一键自动填充**：上传标准参数表 + 招行空模板 → 自动生成填写完整的招行参数表。
 
 ---
-
-## 🚀 安装方法（二选一）
-
-### 方式一：一句话自动安装（推荐 · 支持自动 git clone 的平台）
-
-如果你的 KimiClaw / OpenClaw 支持从 GitHub 自动拉取，直接在对话框发送：
-
-```
-帮我安装这个 skill：https://github.com/你的团队/cmb-param-table-skill
-```
-
-或
-
-```
-从 https://github.com/你的团队/cmb-param-table-skill 克隆 skill 到本地 skills 目录
-```
-
-KimiClaw 会自动：
-1. git clone 本仓库到 `~/.kimi/skills/cmb-param-table-skill`（或对应平台的 skills 目录）
-2. 识别 `SKILL.md` 和 `scripts/`、`references/` 目录
-3. 完成安装，立即可以使用
-
-**支持此方式的平台：** OpenClaw、KimiClaw（新版）、Claude Code（配合 git clone）、Codex 等
-
----
-
-### 方式二：手动下载安装（所有平台通用）
-
-如果你的平台不支持自动 git clone，请按以下步骤操作：
-
-#### Step 1：下载 Skill 文件
-
-访问本仓库的 **[Releases](../../releases/latest)** 页面，下载最新版本的 `cmb-param-table.skill` 文件。
-
-#### Step 2：安装到 KimiClaw
-
-1. 打开 **KimiClaw** 工作台
-2. 点击左下角 **设置**（⚙️）
-3. 进入 **技能管理**（Skills）
-4. 点击 **安装技能**（Install Skill）
-5. 选择下载的 `cmb-param-table.skill` 文件
-6. 安装完成后，技能列表中会显示「招商银行参数表制作」
-
 **适用平台：** 所有支持 `.skill` 文件安装的 Kimi 系列产品
 
 ---
